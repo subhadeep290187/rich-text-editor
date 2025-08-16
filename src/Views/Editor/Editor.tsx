@@ -1,9 +1,8 @@
-import React from 'react';
-
+import './Editor.css'
 function Editor() {
     return (
        <div contentEditable={true} className='rich-text-container'>
-        Hello Vite + React!
+        Hello Vite + React1!
        </div>
     );
 }
