@@ -6,6 +6,10 @@ A lightweight React-based SDK for building rich text editing experiences. This p
 
 - HTML, CSS, JavaScript, React
 
-## Getting Started
-npm run dev
-[http](http://localhost:5173/)
+## 🚀 Features
+
+- **Feature 1:** basic capicity of rich text editor like bold, italic & underline.
+
+## 🏁 Getting Started
+- npm run dev
+- [localhost:5173](http://localhost:5173/)
