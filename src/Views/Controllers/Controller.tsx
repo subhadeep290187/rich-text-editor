@@ -3,7 +3,7 @@ import './Controller.css'
 function Controller() {
     const handleClick = (event: React.MouseEvent<HTMLDivElement> ) => {
         const targetElement = event.target as HTMLElement;
-        // console.log(targetElement.dataset.btnClick);        
+        console.log(targetElement.dataset.btnClick);        
     }
     return (
         <div className='controllers' onClick={(event)=>handleClick(event)}>
