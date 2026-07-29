@@ -2,7 +2,7 @@ import './Editor.css'
 function Editor() {
     return (
        <div contentEditable={true} className='rich-text-container' id='editor'>
-        Hello Vite + React1!
+        Rich Text Editor
        </div>
     );
 }
