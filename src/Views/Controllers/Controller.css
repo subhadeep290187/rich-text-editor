@@ -1,14 +1,35 @@
-.controllers {
-    .btn {
-        background-color: transparent;
-        border: 1px solid #000;;
-        color: #000;
-        padding: 5px 8px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
+.floating-menu {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 8px 24px var(--bg-color);
+  /* border-radius: 8px; */
+  padding: 6px;
+  gap: 4px;
+}
+.floating-menu button:hover {
+  background-color: var(--hover-bg);
+}
+.floating-menu button {
+  border: none;
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-main);
+  transition: background 0.1s ease;
+}
+.btn.bold {
+  font-weight: bold;
+}
+.btn.italic {
+  font-style: italic;
+}
+.btn.underline {
+  text-decoration: underline;
+}
+.btn.strike {
+  text-decoration: line-through;
 }

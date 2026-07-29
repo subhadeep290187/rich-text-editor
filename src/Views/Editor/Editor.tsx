@@ -1,7 +1,7 @@
 import './Editor.css'
 function Editor() {
     return (
-       <div contentEditable={true} className='rich-text-container' id='editor'>
+       <div contentEditable={true} className='editor-canvas' id='editor'>
         Rich Text Editor
        </div>
     );

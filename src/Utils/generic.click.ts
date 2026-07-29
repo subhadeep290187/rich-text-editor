@@ -11,6 +11,9 @@ export function handleItalicClick(): void {
 export function handleUnderlineClick(): void {
     handleGenericClick('u');
 }
+export function handleStrikeClick(): void {
+    handleGenericClick('s');
+}
 
 function handleGenericClick(tagName: string): void {
   const selection = window.getSelection();

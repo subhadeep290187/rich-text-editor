@@ -1,11 +1,11 @@
-.rich-text-container {
-    width: 90%;
+.editor-canvas {
     height: 20rem;
     padding: 5px;
     outline: none;
     border: 1px solid #ccc;
+    background-color: var(--bg-editor-color);
 }
 
-.rich-text-container:focus {
-     border: 1px solid #000;
+.editor-canvas:focus {
+     border: 1px solid #ccc;
 }
