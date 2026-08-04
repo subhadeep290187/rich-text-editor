@@ -5,7 +5,11 @@ import './App.css';
 
 function App() {
   const htmlRef = useRef<HTMLDivElement>(null!);
-  const defaultValue = "Rich Text Editor";
+  let defaultValue = "Rich Text Editor";
+  if (process.env.NODE_ENV === 'development') {
+    console.log(process.env.NODE_ENV)
+     defaultValue = "Rich Text Editor";
+  }
   return (
     <div className="rich-text-editor">
       <Controller htmlRef={htmlRef} />
