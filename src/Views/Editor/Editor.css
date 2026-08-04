@@ -4,6 +4,7 @@
     outline: none;
     border: 1px solid #ccc;
     background-color: var(--bg-editor-color);
+    overflow-y: auto;
 }
 
 .editor-canvas:focus {

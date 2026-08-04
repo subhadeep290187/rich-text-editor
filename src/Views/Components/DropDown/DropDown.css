@@ -1,0 +1,12 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    top: -2px;
+}
+
+.dropdown .font-size-select {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px
+}

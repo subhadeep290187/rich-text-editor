@@ -1,21 +1,25 @@
 
-export function handleBoldClick(): void {
-    handleGenericClick('strong');
-
+export function handleBoldClick(elm: HTMLElement | null): void {
+    handleGenericClick('strong', elm);
 }
 
-export function handleItalicClick(): void {
-    handleGenericClick('em');
+export function handleItalicClick(elm: HTMLElement | null): void {
+    handleGenericClick('em', elm);
 }
 
-export function handleUnderlineClick(): void {
-    handleGenericClick('u');
+export function handleUnderlineClick(elm: HTMLElement | null): void {
+    handleGenericClick('u', elm);
 }
-export function handleStrikeClick(): void {
-    handleGenericClick('s');
+export function handleStrikeClick(elm: HTMLElement | null): void {
+    handleGenericClick('s', elm);
 }
 
-function handleGenericClick(tagName: string): void {
+function handleGenericClick(tagName: string, elm?: HTMLElement | null): void {
+  const editor = elm;
+
+    if (!editor) {
+        return;
+    }
   const selection = window.getSelection();
   if (selection && selection.rangeCount > 0) {
     const range = selection.getRangeAt(0);
