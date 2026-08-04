@@ -8,6 +8,7 @@ import {
   handleUnorderedListClick,
 } from '../../../Utils/advance.click';
 import DropDown from '../DropDown/DropDown';
+import Color from '../Color/Color';
 const data = [
   { value: '10', label: '10pt' },
   { value: '12', label: '12pt' },
@@ -37,6 +38,7 @@ const AdvanceControls = ({
         changeHandler={(value) => handleFontSizeChange(value, htmlRef.current)}
         list={data}
       />
+      <Color />
     </div>
   );
 };

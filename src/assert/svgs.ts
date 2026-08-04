@@ -1,16 +1,18 @@
 export const SVGS = {
-  orderedList: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://w3.org">
-      <path d="M4 6h1v4" /><path d="M4 10h2" />
-      <path d="M10 8h10" />
-      <path d="M4 16h2" /><path d="M4 14a2 2 0 1 1 2 2" />
-      <path d="M10 16h10" />
-    </svg>`,
-  unorderedList: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://w3.org">
-      <line x1="4" y1="6" x2="4.01" y2="6"></line>
-      <line x1="4" y1="12" x2="4.01" y2="12"></line>
-      <line x1="4" y1="18" x2="4.01" y2="18"></line>
-      <line x1="10" y1="6" x2="21" y2="6"></line>
-      <line x1="10" y1="12" x2="21" y2="12"></line>
-      <line x1="10" y1="18" x2="21" y2="18"></line>
-    </svg>`,
+  orderedList: `<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="16" height="16" viewBox="0 0 16 16"><path d="M3.59 3.03h12.2v1.26H3.59zm0 4.29h12.2v1.26H3.59zm0 4.35h12.2v1.26H3.59zM.99 4.79h.49V2.52H.6v.45h.39v1.82zm.87 3.88H.91l.14-.11.3-.24c.35-.28.49-.5.49-.79A.74.74 0 0 0 1 6.8a.77.77 0 0 0-.81.84h.52A.34.34 0 0 1 1 7.25a.31.31 0 0 1 .31.31.6.6 0 0 1-.22.44l-.87.75v.39h1.64zm-.36 3.56a.52.52 0 0 0 .28-.48.67.67 0 0 0-.78-.62.71.71 0 0 0-.77.75h.5a.3.3 0 0 1 .27-.32.26.26 0 1 1 0 .51H.91v.38H1c.23 0 .37.11.37.29a.29.29 0 0 1-.33.29.35.35 0 0 1-.36-.35H.21a.76.76 0 0 0 .83.8.74.74 0 0 0 .83-.72.53.53 0 0 0-.37-.53z"/></svg>`,
+  unorderedList: `<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="16" height="16" viewBox="0 0 24 24">
+  <rect x="5.94" y="6.42" width="18.06" height="1.75"/>
+  <rect x="5.94" y="11.71" width="18.06" height="1.75"/>
+  <rect x="5.94" y="16.99" width="18.06" height="1.75"/>
+  <circle cx="1.85" cy="7.29" r="1.52"/>
+  <circle cx="1.85" cy="12.58" r="1.52"/>
+  <circle cx="1.85" cy="17.87" r="1.52"/>
+</svg>`,
+highlighter: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFD700" height="20" width="20" version="1.1" id="Icons" viewBox="0 0 32 32" xml:space="preserve">
+<g>
+	<path d="M29,27H3c-0.6,0-1,0.4-1,1s0.4,1,1,1h26c0.6,0,1-0.4,1-1S29.6,27,29,27z"/>
+	<path d="M6.4,16.7C6.4,16.7,6.4,16.7,6.4,16.7l7,7c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3l6.9-6.9c0,0,0,0,0,0l1.5-1.5   c0.4-0.4,0.4-1,0-1.4l-8.9-9c0,0,0,0,0,0l-2.5-2.5c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l1.8,1.8l-7.7,7.7c-0.4,0.4-0.4,1,0,1.4   L6.4,16.7z M13.6,7L14,7.5c0,0,0,0,0,0l7,7L20.6,15H7.5l-1-1L13.6,7z"/>
+	<path d="M25,24c1.7,0,3-1.3,3-3c0-1.4-1.8-3.2-2.3-3.7c-0.4-0.4-1-0.4-1.4,0C23.8,17.8,22,19.6,22,21C22,22.7,23.3,24,25,24z"/>
+</g>
+</svg>`
 };
