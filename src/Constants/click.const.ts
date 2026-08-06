@@ -7,3 +7,5 @@ export const CLICK_VALUES = {
     UNORDERED_LIST: 'unordered-list',
     FONT_SIZE: 'font-size',
 }
+
+export const COLORS = ['#FFFFFF', '#4A90E2', '#E74C3C', '#2ECC71', '#F1C40F', '#9B59B6'];
