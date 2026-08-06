@@ -3,20 +3,13 @@ import { SVGS } from '../../../assert/svgs';
 import { CLICK_VALUES } from '../../../Constants/click.const';
 import './AdvanceControls.css';
 import {
-  handleFontSizeChange,
+    handleHighlightColorChange,
   handleOrderedListClick,
+  handleTextColorChange,
   handleUnorderedListClick,
 } from '../../../Utils/advance.click';
-import DropDown from '../DropDown/DropDown';
 import Color from '../Color/Color';
-const data = [
-  { value: '10', label: '10pt' },
-  { value: '12', label: '12pt' },
-  { value: '14', label: '14pt' },
-  { value: '16', label: '16pt' },
-  { value: '18', label: '18pt' },
-  { value: '20', label: '20pt' },
-];
+
 const AdvanceControls = ({
   htmlRef,
 }: {
@@ -34,11 +27,8 @@ const AdvanceControls = ({
         dataSetClick={CLICK_VALUES.UNORDERED_LIST}
         onClick={() => handleUnorderedListClick(htmlRef.current)}
       />
-      <DropDown
-        changeHandler={(value) => handleFontSizeChange(value, htmlRef.current)}
-        list={data}
-      />
-      <Color />
+      <Color changeHandler={(color) => handleHighlightColorChange(color, htmlRef.current)} iconType="highlighter" />
+      <Color changeHandler={(color) => handleTextColorChange(color, htmlRef.current)} iconType="textColor" />
     </div>
   );
 };

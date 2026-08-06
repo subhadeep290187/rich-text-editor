@@ -1,12 +1,28 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    top: -2px;
 }
 
 .dropdown .font-size-select {
     background: transparent;
     border: none;
     outline: none;
-    font-size: 14px
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-main);
+    width: 4.7rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.dropdown .font-size-select:hover {
+    background-color: var(--hover-bg);
+    border-radius: 4px;
+}
+.dropdown .font-size-select option {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding: 6px 10px;
+    cursor: pointer;
 }

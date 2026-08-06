@@ -1,7 +1,7 @@
 import { CLICK_VALUES } from '../../../Constants/click.const';
 import './DropDown.css';
 
-const DropDown = ({changeHandler, list}: {changeHandler: (value: string) => void; list: { value: string; label: string }[]}) => {
+const DropDown = ({changeHandler, list, defaultValue}: {changeHandler: (value: string) => void; list: { value: string; label: string }[]; defaultValue?: string}) => {
   return (
     <div className="dropdown">
       <select
@@ -10,7 +10,11 @@ const DropDown = ({changeHandler, list}: {changeHandler: (value: string) => void
         onChange={(e) => {
           changeHandler(e.target.value);
         }}
+        //  value={defaultValue || 'Size'}
       >
+        <option value="" disabled selected hidden>
+          {defaultValue || 'Select'}
+        </option>
         {list.map((item) => (
           <option key={item.value} value={item.value}>
             {item.label}

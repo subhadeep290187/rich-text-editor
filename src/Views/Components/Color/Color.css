@@ -1,14 +1,17 @@
-
-
 .color-picker-wrapper {
   position: relative;
   display: inline-block;
   cursor: pointer;
   top: 2px;
+  padding: 2px 10px;
+}
+.color-picker-wrapper:hover {
+  background-color: var(--hover-bg);
+  border-radius: 4px;
 }
 
 /* Hide the default input completely but keep it clickable */
-.color-picker-wrapper input[type="color"] {
+.color-picker-wrapper input[type='color'] {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,5 +29,3 @@
 .color-picker-wrapper:hover #pickerIcon {
   transform: scale(1.05);
 }
-
-
